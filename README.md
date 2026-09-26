@@ -43,8 +43,8 @@ Commands:
 ### Install & run
 
 ```bash
-git clone <this-repo>
-cd walrus-hackathon
+git clone https://github.com/maxence81/walrus-brain.git
+cd walrus-brain
 npm install
 cp .env.example .env   # fill in your credentials
 npm run dev
