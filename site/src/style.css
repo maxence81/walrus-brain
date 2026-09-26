@@ -52,10 +52,22 @@ body {
 .nav {
   position: sticky; top: 0; z-index: 20;
   display: flex; align-items: center; justify-content: space-between;
-  background: var(--paper);
-  border-bottom: 1px solid var(--carbon);
   padding: 12px 20px;
+  overflow: hidden;
+  background:
+    linear-gradient(to bottom, #fff 0%, #fff 40%, rgba(255, 255, 255, 0) 100%),
+    linear-gradient(to right, #0ed2da, #5f29c7);
 }
+.nav::before {
+  content: "";
+  position: absolute; inset: 0;
+  background-image: linear-gradient(90deg, #ccc 1px, transparent 1px);
+  background-size: 50px 100%;
+  pointer-events: none;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 70%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 70%);
+}
+.nav > * { position: relative; z-index: 1; }
 .logo {
   display: flex; align-items: center; gap: 8px;
   text-decoration: none; color: var(--carbon);
