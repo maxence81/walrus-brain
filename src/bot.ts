@@ -1,4 +1,5 @@
 import { Telegraf } from "telegraf";
+import { createServer } from "node:http";
 import { config } from "./config.js";
 import { chat } from "./llm.js";
 import { recallMemories, rememberFact, listMemories } from "./memory.js";
@@ -93,8 +94,15 @@ bot.on("text", async (ctx) => {
   }
 });
 
+// Minimal HTTP server for Fly.io health checks (bot itself uses long-polling).
+const port = Number(process.env.PORT ?? 3000);
+createServer((req, res) => {
+  res.writeHead(200, { "content-type": "application/json" });
+  res.end(JSON.stringify({ ok: true, bot: "walrus-brain" }));
+}).listen(port, () => console.log(`health server on :${port}`));
+
 bot.launch().then(() => {
-  console.log(`Recall bot running. LLM: ${config.llm.model}`);
+  console.log(`Walrus Brain bot running. LLM: ${config.llm.model}`);
 });
 
 process.once("SIGINT", () => bot.stop("SIGINT"));
