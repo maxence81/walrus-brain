@@ -13,6 +13,7 @@ Bad facts: greetings, small talk, one-off questions already fully answered, anyt
 
 Rules:
 - One fact per line, third person, concise ("User is learning TypeScript generics").
+- ALWAYS write facts in English, regardless of the conversation language.
 - If nothing durable, reply exactly: NONE`;
 
 export async function extractFacts(userMessage: string, botReply: string): Promise<string[]> {
