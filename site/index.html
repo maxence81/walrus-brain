@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WALRUS BRAIN — the chatbot that never forgets</title>
+  <meta name="description" content="A Telegram learning coach with real long-term memory on Walrus mainnet. Built for Walrus Session 8: Chatbots That Remember." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Inter:wght@500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- MARQUEE -->
+  <div class="marquee band-black">
+    <div class="marquee-track">
+      <span>WALRUS SESSION 8 ✦ CHATBOTS THAT REMEMBER ✦ LIVE ON MAINNET ✦ NE NEVER FORGETS ✦ </span>
+      <span>WALRUS SESSION 8 ✦ CHATBOTS THAT REMEMBER ✦ LIVE ON MAINNET ✦ NE NEVER FORGETS ✦ </span>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a class="logo" href="#top">
+      <span class="logo-badge">W</span> WALRUS BRAIN
+    </a>
+    <div class="nav-pills">
+      <a class="npill" href="#demo">DEMO</a>
+      <a class="npill" href="#system">SYSTEM</a>
+      <a class="npill" href="#proof">PROOF</a>
+    </div>
+    <a class="cta-fill" href="https://t.me/walrus_brain_hackthon_bot" target="_blank" rel="noopener">LAUNCH BOT</a>
+  </nav>
+
+  <main id="top">
+
+    <!-- HERO : full-bleed video + sculptural type -->
+    <section class="hero">
+      <video class="hero-video" src="./walrus_landing.mp4" autoplay muted loop playsinline></video>
+      <div class="hero-veil"></div>
+
+      <div class="hero-inner">
+        <h1 class="display">
+          <span class="line r1">WALRUS</span>
+          <span class="line r2">BRAIN</span>
+        </h1>
+
+        <div class="stickers">
+          <div class="sticker st-violet rot-r2 mono-s">MAINNET ↗</div>
+        </div>
+
+        <div class="hero-sub">
+          <p class="tagline">A Telegram learning coach with real long-term memory —<br />stored on Walrus, mainnet.</p>
+          <div class="hero-ctas">
+            <a class="cta-fill" href="https://t.me/walrus_brain_hackthon_bot" target="_blank" rel="noopener">TALK TO THE BOT</a>
+            <a class="cta-ghost" href="#demo">WATCH IT REMEMBER</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE 2 -->
+    <div class="marquee band-blue">
+      <div class="marquee-track rev">
+        <span>ACROSS SESSIONS ✦ ACROSS DEVICES ✦ ACROSS WEEKS ✦ ACROSS SESSIONS ✦ ACROSS DEVICES ✦ </span>
+        <span>ACROSS SESSIONS ✦ ACROSS DEVICES ✦ ACROSS WEEKS ✦ ACROSS SESSIONS ✦ ACROSS DEVICES ✦ </span>
+      </div>
+    </div>
+
+    <!-- PROBLEM (paper white band) -->
+    <section class="band band-white">
+      <h2 class="display-sm">GOLDFISH<br />MEMORY</h2>
+      <p class="sub">Most chatbots forget you the moment the tab closes.</p>
+      <div class="card-row">
+        <div class="card c-lav rot-l">
+          <span class="card-tag mono-s">/01</span>
+          <p>A support bot asks for your order number. <b>For the third time.</b></p>
+        </div>
+        <div class="card c-mist rot-r">
+          <span class="card-tag mono-s">/02</span>
+          <p>A companion app has <b>no idea</b> what you told it yesterday.</p>
+        </div>
+        <div class="card c-sky rot-l2">
+          <span class="card-tag mono-s">/03</span>
+          <p>A learning coach re-explains the concept <b>you mastered last week.</b></p>
+        </div>
+      </div>
+      <p class="foot-note">We fixed the third one. The pattern fixes them all.</p>
+    </section>
+
+    <!-- DEMO (sky band) — real conversation -->
+    <section class="band" id="demo">
+      <h2 class="display-sm">SAME BOT.<br />FRESH PROCESS.</h2>
+      <p class="sub">Process killed and restarted between sessions. Real conversation, Sept 26 2026.</p>
+      <div class="duo">
+        <div class="card c-mist rot-l duo-card">
+          <span class="card-tag mono-s">WITHOUT MEMORY</span>
+          <div class="bubble b-user">What should we work on today?</div>
+          <div class="bubble b-bot">Sure! First, introduce yourself — what's your level, and what are you learning right now?</div>
+          <div class="bubble b-user">… I told you this yesterday 🙄</div>
+        </div>
+        <div class="card c-violet rot-r duo-card">
+          <span class="card-tag mono-s">WITH WALRUS MEMORY — LIVE</span>
+          <div class="bubble b-user">What should we work on today?</div>
+          <div class="bubble b-bot">Hey Maxence! Last time you were stuck on generics, especially <code>extends</code> constraints. Clearer now? Otherwise we consolidate, then Utility Types, then we scout an open source project — your goal is a first contribution by December.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SYSTEM (gray band) -->
+    <section class="band gray" id="system">
+      <h2 class="display-sm">MEMORY,<br />ON PURPOSE.</h2>
+      <div class="card-row tall">
+        <div class="card c-lav rot-l">
+          <span class="card-tag mono-s">RECALL</span>
+          <p>Every message triggers a semantic search inside your Walrus Memory namespace. The right memories are injected <b>before</b> a single token is generated.</p>
+        </div>
+        <div class="card c-mint rot-r2">
+          <span class="card-tag mono-s">NAMESPACES</span>
+          <p>One private, SEAL-encrypted memory space per Telegram user. Survives restarts <b>and devices</b>.</p>
+        </div>
+        <div class="card c-sun rot-l2">
+          <span class="card-tag mono-s">CURATION</span>
+          <p>A small model (GLM 5.3 Flash) keeps only durable facts — goals, difficulties, plans. <b>Not noise.</b></p>
+        </div>
+        <div class="card c-white rot-r">
+          <span class="card-tag mono-s">/MEMORIES</span>
+          <p>Any user can inspect <b>everything</b> the bot knows about them. Always.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROOF (paper white) -->
+    <section class="band band-white" id="proof">
+      <h2 class="display-sm">REAL USE.<br />ON MAINNET.</h2>
+      <div class="stats">
+        <div class="stat rot-l"><strong>3+</strong><span>REAL USERS</span></div>
+        <div class="stat rot-r"><strong>10+</strong><span>MEMORIES / USER</span></div>
+        <div class="stat rot-l2"><strong>100%</strong><span>BLOBS ON WALRUS</span></div>
+        <div class="stat rot-r2"><strong>0</strong><span>ANTHROPIC / OPENAI</span></div>
+      </div>
+      <p class="foot-note">Agent ID + blob count published in the submission — every memory is a verifiable Walrus blob.</p>
+    </section>
+
+    <!-- FOOTER (black band) -->
+    <footer class="band band-black footer">
+      <h2 class="display-lg">NEVER<br /><span class="accent-line">FORGET.</span></h2>
+      <div class="footer-ctas">
+        <a class="cta-white" href="https://t.me/walrus_brain_hackthon_bot" target="_blank" rel="noopener">TALK TO THE BOT</a>
+
+        <!-- GitHub star button (adapted from Uiverse.io / Itskrish01) -->
+        <a class="gh-btn" href="https://github.com/" target="_blank" rel="noopener" id="gh-star">
+          <span class="gh-glow gh-glow-a"></span>
+          <span class="gh-glow gh-glow-b"><span class="gh-glow-inner"></span></span>
+          <span class="gh-core">
+            <span class="gh-star-wrap">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="gh-star">
+                <path
+                  d="M11.5268 2.29489C11.5706 2.20635 11.6383 2.13183 11.7223 2.07972C11.8062 2.02761 11.903 2 12.0018 2C12.1006 2 12.1974 2.02761 12.2813 2.07972C12.3653 2.13183 12.433 2.20635 12.4768 2.29489L14.7868 6.97389C14.939 7.28186 15.1636 7.5483 15.4414 7.75035C15.7192 7.95239 16.0419 8.08401 16.3818 8.13389L21.5478 8.88989C21.6457 8.90408 21.7376 8.94537 21.8133 9.00909C21.8889 9.07282 21.9452 9.15644 21.9758 9.2505C22.0064 9.34456 22.0101 9.4453 21.9864 9.54133C21.9627 9.63736 21.9126 9.72485 21.8418 9.79389L18.1058 13.4319C17.8594 13.672 17.6751 13.9684 17.5686 14.2955C17.4622 14.6227 17.4369 14.9708 17.4948 15.3099L18.3768 20.4499C18.3941 20.5477 18.3835 20.6485 18.3463 20.7406C18.3091 20.8327 18.2467 20.9125 18.1663 20.9709C18.086 21.0293 17.9908 21.0639 17.8917 21.0708C17.7926 21.0777 17.6935 21.0566 17.6058 21.0099L12.9878 18.5819C12.6835 18.4221 12.345 18.3386 12.0013 18.3386C11.6576 18.3386 11.3191 18.4221 11.0148 18.5819L6.3978 21.0099C6.31013 21.0563 6.2112 21.0772 6.11225 21.0701C6.0133 21.0631 5.91832 21.0285 5.83809 20.9701C5.75787 20.9118 5.69563 20.8321 5.65846 20.7401C5.62128 20.6482 5.61066 20.5476 5.6278 20.4499L6.5088 15.3109C6.567 14.9716 6.54178 14.6233 6.43534 14.2959C6.32889 13.9686 6.14441 13.672 5.8978 13.4319L2.1618 9.79489C2.09039 9.72593 2.03979 9.63829 2.01576 9.54197C1.99173 9.44565 1.99524 9.34451 2.02588 9.25008C2.05652 9.15566 2.11307 9.07174 2.18908 9.00788C2.26509 8.94402 2.3575 8.90279 2.4558 8.88889L7.6208 8.13389C7.96106 8.08439 8.28419 7.95295 8.56238 7.75088C8.84058 7.54881 9.0655 7.28216 9.2178 6.97389L11.5268 2.29489Z"
+                  fill="url(#g0)" stroke="url(#g1)" stroke-linecap="round" stroke-linejoin="round"></path>
+                <defs>
+                  <linearGradient id="g0" x1="-0.5" y1="9" x2="15.5" y2="-1.5" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#7A69F9"></stop><stop offset="0.575" stop-color="#F26378"></stop><stop offset="1" stop-color="#F5833F"></stop>
+                  </linearGradient>
+                  <linearGradient id="g1" x1="-0.5" y1="9" x2="15.5" y2="-1.5" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#7A69F9"></stop><stop offset="0.575" stop-color="#F26378"></stop><stop offset="1" stop-color="#F5833F"></stop>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <span class="gh-star-shine"></span>
+            </span>
+            <span class="gh-label">Star us on GitHub</span>
+          </span>
+        </a>
+
+        <a class="npill dark" href="https://github.com/MystenLabs/MemWal" target="_blank" rel="noopener">WALRUS MEMORY ↗</a>
+      </div>
+      <p class="foot-note silver">Walrus Session 8 — Chatbots That Remember</p>
+    </footer>
+
+  </main>
+
+  <script type="module" src="./src/main.ts"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "recall-bot",
+  "version": "0.1.0",
+  "description": "A Telegram learning-coach chatbot that remembers you across sessions thanks to Walrus Memory. Built for Walrus Session 8: Chatbots That Remember.",
+  "type": "module",
+  "private": false,
+  "license": "Apache-2.0",
+  "scripts": {
+    "dev": "tsx src/bot.ts",
+    "start": "node --import tsx src/bot.ts",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "show-memories": "tsx scripts/show-memories.ts"
+  },
+  "dependencies": {
+    "@mysten-incubation/memwal": "latest",
+    "dotenv": "^16.4.5",
+    "openai": "^4.67.0",
+    "telegraf": "^4.16.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
